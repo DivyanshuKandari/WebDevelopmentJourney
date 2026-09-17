@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Table</title>
+    <!-- Uncomment below line to show rows/colspan clearly using css borders -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Course</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>Divyanshu</td>
+            <td>Web Development</td>
+            <td>Ongoing</td>
+        </tr>
+        <tr>
+            <td>Suraj</td>
+            <td>DSA</td>
+            <td>Completed</td>
+        </tr>
+
+<!-- Using rowspan -->
+        <!-- Dholu Bholu doing same course -->
+        <tr>
+            <td>Dholu</td>
+            <td rowspan="2">Excel</td>
+            <td>Completed</td>
+        </tr>
+        <tr>
+            <td>Bholu</td>
+            
+            <td>Ongoing</td>
+        </tr>
+
+<!-- Using colspan -->
+        <!-- Siddhi not yet enrolled in any course hence no status to show -->
+        <tr>
+            <td>Siddhi</td>
+            <td colspan="2">Not Enrolled In any Course yet</td>
+            
+        </tr>
+
+
+    </table>
+</body>
+</html>
